@@ -1,0 +1,10 @@
+syntax = "proto3";
+option java_package = "com.example.jetpackdatastore";
+option java_multiple_files = true;
+//The class for our stored objects is generated at compile time from the message defined in the proto file
+// data types are available as field types, including bool, int32, float, double, and string
+ message Person{
+   string msg = 1; //The " 1", " 2" markers on each element identify the unique "tag" that field uses in the binary encoding
+   int32 integer = 2;
+   bool example = 3;
+    }
